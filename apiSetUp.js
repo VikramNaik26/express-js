@@ -26,6 +26,7 @@ app.get("/api/products", (req, res) => {
   res.send(singleProduct);
 }); */
 
+// route params
 app.get("/api/products/:productId", (req, res) => {
   const { productId } = req.params;
   const singleProduct = products.find((product) => product.id === +productId);

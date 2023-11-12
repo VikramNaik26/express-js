@@ -20,6 +20,7 @@ const logger = (req, res, next) => {
   console.log(method, url, time);
   res.send("Home");
 }); */
+
 app.get("/", logger, (req, res) => {
   res.send("Home");
 });
